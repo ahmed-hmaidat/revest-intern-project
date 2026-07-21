@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 1: Dashboard Cards</title>
+  <style>
+    :root {
+      --bg-card: #ffffff;
+      --text-main: #333333;
+      --text-muted: #666666;
+      --icon-bg: #ffeedd;
+      --icon-color: #f97316;
+      --card-border: #e2e8f0;
+    }
+
+    .dark-theme {
+      --bg-card: #333333;
+      --text-main: #ffffff;
+      --text-muted: #aaaaaa;
+      --icon-bg: #4a2c1d;
+      --icon-color: #fb923c;
+      --card-border: #444444;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f5f7;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .card {
+      background-color: var(--bg-card);
+      color: var(--text-main);
+      max-width: 350px;
+      width: 100%;
+      border-radius: 20px;
+      padding: 20px;
+      border: 1px solid var(--card-border);
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .icon-box {
+      background-color: var(--icon-bg);
+      color: var(--icon-color);
+      width: 50px;
+      height: 50px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .data-box {
+      flex-grow: 1;
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .title {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .trend {
+      color: #10b981;
+      font-weight: bold;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .value {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="icon-box">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+    </div>
+    <div class="data-box">
+      <div class="card-top">
+        <span class="title">Total Messages</span>
+        <div class="trend">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+            <polyline points="17 6 23 6 23 12"></polyline>
+          </svg>
+          +12%
+        </div>
+      </div>
+      <div class="value">1,428</div>
+    </div>
+  </div>
+
+  <div class="card dark-theme">
+    <div class="icon-box">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+    </div>
+    <div class="data-box">
+      <div class="card-top">
+        <span class="title">Total Messages</span>
+        <div class="trend">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+            <polyline points="17 6 23 6 23 12"></polyline>
+          </svg>
+          +12%
+        </div>
+      </div>
+      <div class="value">1,428</div>
+    </div>
+  </div>
+
+</body>
+</html>

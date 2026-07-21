@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Card Variations</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f5f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+      gap: 40px;
+    }
+
+    h2 {
+      color: #0f172a;
+      margin-bottom: -20px;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: center;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .card-vertical {
+      background-color: #ffffff;
+      max-width: 300px;
+      width: 100%;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.04);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-vertical .img-box {
+      position: relative;
+      width: 100%;
+      height: 200px;
+    }
+
+    .card-vertical img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .badge-discount {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background-color: #ef4444;
+      color: white;
+      font-size: 11px;
+      font-weight: bold;
+      padding: 4px 8px;
+      border-radius: 12px;
+    }
+
+    .card-vertical .content {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .category {
+      font-size: 11px;
+      color: #64748b;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .title {
+      font-size: 16px;
+      color: #0f172a;
+      font-weight: bold;
+    }
+
+    .price-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #2563eb;
+    }
+
+    .old-price {
+      font-size: 13px;
+      color: #94a3b8;
+      text-decoration: line-through;
+      margin-left: 4px;
+    }
+
+    .btn-buy {
+      background-color: #0f172a;
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .btn-buy:hover {
+      background-color: #2563eb;
+    }
+
+    .card-horizontal {
+      background-color: #ffffff;
+      max-width: 600px;
+      width: 100%;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.04);
+      display: flex;
+    }
+
+    .card-horizontal .img-box {
+      width: 40%;
+      flex-shrink: 0;
+    }
+
+    .card-horizontal img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card-horizontal .content {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      width: 60%;
+    }
+
+    .desc {
+      font-size: 13px;
+      color: #64748b;
+      line-height: 1.5;
+    }
+
+    .card-minimal {
+      background-color: #ffffff;
+      max-width: 300px;
+      width: 100%;
+      border-radius: 16px;
+      padding: 16px;
+      border: 1px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .card-minimal img {
+      width: 70px;
+      height: 70px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .card-minimal .info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Content & Product Card Variations</h2>
+
+  <div class="wrapper">
+
+    <!-- 1. Variation Vertical Product Card -->
+    <div class="card-vertical">
+      <div class="img-box">
+        <span class="badge-discount">-20% OFF</span>
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80" alt="Headphones">
+      </div>
+      <div class="content">
+        <span class="category">Audio Electronics</span>
+        <h3 class="title">Wireless Headphones</h3>
+        <div class="price-row">
+          <div>
+            <span class="price">$79.99</span>
+            <span class="old-price">$99.99</span>
+          </div>
+          <button class="btn-buy">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-minimal">
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=300&q=80" alt="Watch">
+      <div class="info">
+        <span class="category">Accessories</span>
+        <h4 class="title" style="font-size: 14px;">Smart Watch v2</h4>
+        <span class="price" style="font-size: 15px;">$149.00</span>
+      </div>
+    </div>
+
+    <div class="card-horizontal">
+      <div class="img-box">
+        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80" alt="Workspace">
+      </div>
+      <div class="content">
+        <span class="category">Featured Article</span>
+        <h3 class="title">Designing Scalable Card Layouts</h3>
+        <p class="desc">Explore how to handle different screen variations and component layouts effectively using Flexbox.</p>
+        <button class="btn-buy" style="align-self: flex-start; margin-top: 5px;">Read More</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
