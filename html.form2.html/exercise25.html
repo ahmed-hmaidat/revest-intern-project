@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+input[type=text]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  
+
+<h2>License Plate</h2>
+
+<p>Please enter a license plate (2 uppercase letters followed by 4 digits, e.g., AB1234).</p>
+
+<form>
+
+<label for="plate"><b>License Plate</b></label>
+    <input type="text" id="plate" name="plate" pattern="[A-Z]{2}[0-9]{4}" title="Format must be 2 uppercase letters followed by 4 digits (e.g., AB1234)" placeholder="e.g. AB1234" required>
+
+    <input type="submit" value="Submit Plate">
+</form>
+</div>
+
+
+</body>
+</html>
