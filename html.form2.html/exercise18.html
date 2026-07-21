@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  
+
+<h2>Multiple Emails</h2>
+
+<p>You can enter multiple email addresses separated by a comma (e.g., mail1@revest.com, mail2@revest.com).</p>
+
+<form>
+    <label for="emails"><b>Email Addresses</b></label>
+    <input type="email" id="emails" name="emails" placeholder="email1@example.com, email2@example.com" multiple required>
+
+    <input type="submit" value="Submit Emails">
+  </form>
+</form>
+</div>
+
+
+</body>
+</html>
