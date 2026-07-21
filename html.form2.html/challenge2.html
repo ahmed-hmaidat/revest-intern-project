@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=url], 
+input[type=number], input[type=date], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.radio-group, .checkbox-group {
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+.radio-group label, .checkbox-group label {
+  margin-right: 15px;
+  font-weight: normal;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 25px;
+  max-width: 600px;
+  margin: auto;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Employee Registration System</h2>
+  
+  <form>
+    <label for="fname"><b>First Name</b></label>
+    <input type="text" id="fname" name="fname" placeholder="Enter first name" required>
+
+    <label for="lname"><b>Last Name</b></label>
+    <input type="text" id="lname" name="lname" placeholder="Enter last name" required>
+
+    <label for="empid"><b>Employee ID (6 Digits)</b></label>
+    <input type="text" id="empid" name="empid" pattern="[0-9]{6}" title="Employee ID must be exactly 6 digits" placeholder="e.g. 102030" required>
+
+    <label for="email"><b>Email Address</b></label>
+    <input type="email" id="email" name="email" placeholder="e.g. kamal@revest.com" required>
+
+    <label for="phone"><b>Phone Number</b></label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Phone must be 10 digits" placeholder="e.g. 0791234567" required>
+
+    <label for="salary"><b>Salary (300 - 10000)</b></label>
+    <input type="number" id="salary" name="salary" min="300" max="10000" placeholder="Enter salary amount" required>
+
+    <label for="dob"><b>Date of Birth</b></label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="department"><b>Department</b></label>
+    <select id="department" name="department" required>
+      <option value="" disabled selected>-- Select Department --</option>
+      <option value="dev">Software Engineering</option>
+      <option value="data">Data & AI</option>
+      <option value="hr">Human Resources</option>
+    </select>
+
+    <label><b>Gender</b></label>
+    <div class="radio-group">
+      <label><input type="radio" name="gender" value="male" required> Male</label>
+      <label><input type="radio" name="gender" value="female"> Female</label>
+    </div>
+
+    <label for="address"><b>Address</b></label>
+    <input type="text" id="address" name="address" placeholder="Enter full home address" required>
+
+    <label for="website"><b>Personal Website / Portfolio</b></label>
+    <input type="url" id="website" name="website" placeholder="https://github.com/kamaljehad28" required>
+
+    <label for="emergency"><b>Emergency Contact Phone</b></label>
+    <input type="tel" id="emergency" name="emergency" pattern="[0-9]{10}" placeholder="e.g. 0787335460" required>
+
+    <div class="checkbox-group">
+      <label>
+        <input type="checkbox" id="policy" name="policy" required>
+        <b>I accept the Company Policy and Terms</b>
+      </label>
+    </div>
+
+    <input type="submit" value="Register Employee">
+  </form>
+</div>
+
+</body>
+</html>
