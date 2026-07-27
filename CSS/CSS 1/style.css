@@ -1,0 +1,217 @@
+/* ===========================
+   CSS VARIABLES
+=========================== */
+
+:root{
+
+    --radius:20px;
+
+    --shadow:
+    0 10px 30px rgba(0,0,0,.08);
+
+    --transition:.3s;
+
+}
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:rgb(157, 255, 0);
+
+    display: flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+}
+
+/* ===========================
+   Cards Layout
+=========================== */
+
+.cards{
+
+    display:flex;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+/* ===========================
+   Base Card
+=========================== */
+
+.card{
+
+    max-width:360px;
+
+    width:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:25px;
+
+    border-radius:40px;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+    
+
+}
+
+/* ===========================
+   Icon
+=========================== */
+
+.icon{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-shrink:0;
+
+}
+
+.icon svg{
+
+    width:30px;
+
+    height:30px;
+
+}
+
+/* ===========================
+   Text
+=========================== */
+
+.content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:6px;
+
+}
+
+.content h3{
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+.content h2{
+
+    font-size:30px;
+
+    font-weight:bold;
+
+}
+
+.up{
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#b13f20;
+
+}
+
+/* ===========================
+   LIGHT THEME
+=========================== */
+
+.light{
+
+    background:rgb(255, 255, 255);
+
+    color:#333;
+
+}
+
+.light .icon{
+
+    background:#FFE5D4;
+
+    color:#E07A2D;
+
+}
+
+/* ===========================
+   DARK THEME
+=========================== */
+
+.dark{
+
+    background:#333333;
+
+    color:white;
+
+}
+
+.dark .icon{
+
+    background:#5a3535;
+
+    color:#9fb4f7;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+.cards{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+}
