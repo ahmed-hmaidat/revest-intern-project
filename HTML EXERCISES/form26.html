@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>University Registration</title>
+</head>
+<body>
+
+    <h2>University Registration</h2>
+
+    <form>
+
+        <!-- Full Name -->
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required>
+        <br><br>
+
+        <!-- Student ID -->
+        <label for="studentid">Student ID:</label><br>
+        <input type="text" id="studentid" name="studentid"
+               minlength="8" maxlength="8" required>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"
+               minlength="8" required>
+        <br><br>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <!-- Department -->
+        <label for="department">Department:</label><br>
+        <select id="department" name="department" required>
+            <option value="">-- Select Department --</option>
+            <option value="cs">Computer Science</option>
+            <option value="it">Information Technology</option>
+            <option value="ee">Electrical Engineering</option>
+            <option value="ce">Civil Engineering</option>
+        </select>
+        <br><br>
+
+        <!-- Agree to Rules -->
+        <input type="checkbox" id="rules" name="rules" required>
+        <label for="rules">I agree to the university rules</label>
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+
+    </form>
+
+</body>
+</html>

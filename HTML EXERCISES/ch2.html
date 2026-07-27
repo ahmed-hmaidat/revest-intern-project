@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Registration System</title>
+</head>
+<body>
+
+<h2>Employee Registration System</h2>
+
+<form>
+
+    <label>First Name:</label><br>
+    <input type="text" name="firstname"
+           minlength="2" maxlength="20" required>
+    <br><br>
+
+    <label>Last Name:</label><br>
+    <input type="text" name="lastname"
+           minlength="2" maxlength="20" required>
+    <br><br>
+
+    <label>Employee ID:</label><br>
+    <input type="text" name="employeeid"
+           minlength="6" maxlength="6" required>
+    <br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" required>
+    <br><br>
+
+    <label>Phone:</label><br>
+    <input type="tel" name="phone"
+           pattern="[0-9]{10}" required>
+    <br><br>
+
+    <label>Salary:</label><br>
+    <input type="number" name="salary"
+           min="300" step="0.01" required>
+    <br><br>
+
+    <label>Date of Birth:</label><br>
+    <input type="date" name="dob" required>
+    <br><br>
+
+    <label>Department:</label><br>
+    <select name="department" required>
+        <option value="">Select Department</option>
+        <option>HR</option>
+        <option>IT</option>
+        <option>Finance</option>
+        <option>Marketing</option>
+    </select>
+    <br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="Male" required> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <br><br>
+
+    <label>Address:</label><br>
+    <textarea name="address" maxlength="200" required></textarea>
+    <br><br>
+
+    <label>Website:</label><br>
+    <input type="url" name="website">
+    <br><br>
+
+    <label>Skills:</label><br>
+    <select name="skills" multiple required>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+        <option>Python</option>
+        <option>SQL</option>
+    </select>
+    <br><br>
+
+    <label>Emergency Contact:</label><br>
+    <input type="tel" name="emergency"
+           pattern="[0-9]{10}" required>
+    <br><br>
+
+    <label>
+        <input type="checkbox" required>
+        I accept the Company Policy
+    </label>
+    <br><br>
+
+    <input type="submit" value="Register">
+
+</form>
+
+</body>
+</html>
