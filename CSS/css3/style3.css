@@ -1,0 +1,137 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#f5f7fb;
+}
+
+/* Wrapper */
+
+.buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+}
+
+/* =========================
+      Base Button
+========================= */
+
+.btn{
+
+    padding:20px 32px;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    border:none;
+
+    cursor:pointer;
+
+    transition:all .2s ease-in-out;
+}
+
+/* =========================
+      Shape Variants
+========================= */
+
+.btn-round{
+
+    border-radius:8px;
+}
+
+.btn-pill{
+
+    border-radius:9999px;
+}
+
+/* =========================
+      Solid Variant
+========================= */
+
+.btn-solid{
+
+    background:#2563EB;
+
+    color:white;
+}
+
+.btn-solid:hover{
+
+    background:#1D4ED8;
+}
+
+.btn-solid:active{
+
+    transform:scale(.96);
+}
+
+/* =========================
+      Soft Variant
+========================= */
+
+.btn-soft{
+
+    background:#DBEAFE;
+
+    color:#2563EB;
+}
+
+.btn-soft:hover{
+
+    background:#BFDBFE;
+}
+
+.btn-soft:active{
+
+    transform:scale(.96);
+}
+
+/* =========================
+      Outline Variant
+========================= */
+
+.btn-outline{
+
+    background:transparent;
+
+    color:#2563EB;
+
+    border:2px solid #2563EB;
+}
+
+.btn-outline:hover{
+
+    background:#EFF6FF;
+
+    border-color:#1D4ED8;
+
+    color:#1D4ED8;
+}
+
+.btn-outline:active{
+
+    transform:scale(.96);
+}
