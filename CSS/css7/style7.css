@@ -1,0 +1,138 @@
+body {
+    background: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.containar {
+
+    display: flex;
+    flex-direction: column;
+
+    
+    gap: 20px;
+}
+.user-card .upper-slot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.user-card{
+
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+}
+.user-card .upper-slot .img{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(214, 249, 214);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    
+}
+ .user-card .upper-slot h2 {
+
+    color: rgb(103, 177, 103);
+    margin-bottom: 5px;
+    font-size: 20px;
+line-height: 30px;  
+}
+.user-card .upper-slot p{
+    color: rgb(92, 100, 108);
+    text-align: center; 
+    margin-bottom: 5px;
+}
+.user-card .medel-slot{
+    background-color:rgb(227, 228, 230) ;
+    
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+.user-card .medel-slot .row:first-child{
+    border-bottom: 1px solid #9a9a9a;
+}
+
+.user-card .medel-slot .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-card .medel-slot .row .text {
+    color: rgb(92, 100, 108);
+    
+}
+.user-card .medel-slot .row .box{
+    background-color:white;
+    border-radius: 10px;
+    border:1px solid;
+    padding: 6px;
+    cursor: pointer;
+    
+}
+.user-card .medel-slot .row .box p{
+    margin: 0%;
+}
+.user-card .lower-slot .maseag {
+    background-color:rgb(202, 230, 255);
+    border-radius: 10bx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px ;
+    
+     width: 100%;
+    border-radius: 10px;
+    padding: 1px;
+    
+}
+.user-card .lower-slot .maseag p{
+    color: rgb(92, 100, 108);
+}
+
+.user-card .lower-slot .download {
+    background-color:black;
+    border-radius: 10bx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px ;
+     width: 100%;
+    border-radius: 10px;
+    padding: 1px;
+    color: white;
+}
+.user-card .lower-slot .download .img{
+    
+    filter: brightness(0) invert(1);
+}
+.user-card .lower-slot .return {
+    background-color:white;
+    border-radius: 10bx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px ;
+     width: 100%;
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 1px;
+    color: black;
+}
+.user-card .lower-slot p{ 
+    color:rgb(92, 100, 108);
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
