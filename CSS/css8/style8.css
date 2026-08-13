@@ -1,0 +1,154 @@
+body {
+    background: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    
+
+}
+
+.containar {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 
+    
+}
+.card-form{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 3%;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    
+
+}
+.card-form .upper-slot .img img{
+     filter: brightness(0) saturate(100%) invert(47%) sepia(57%) saturate(502%) hue-rotate(71deg) brightness(96%) contrast(91%);
+        width: 10px;
+        
+        height: 10px;
+        
+       
+
+}
+.card-form .upper-slot .img{
+    
+    display: flex;
+    align-items: center;
+    padding: 2px 10px;
+    background: #c5efc5;
+    border: 1px solid #b8dab8;
+    border-radius: 8px;
+    height: 20px;
+  
+
+}
+.card-form .upper-slot .img p {
+margin: 0;
+    font-size: 15px;
+    color: #3d9b3d;
+    
+}
+.card-form .upper-slot{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items:start ;
+    
+}
+.card-form .upper-slot h4{
+    font-size: 25px;
+    margin-bottom: .1px;
+}
+.card-form .upper-slot p{
+    color: rgb(142, 140, 140);
+    margin-bottom: 30px;
+}
+.card-form .medel-slot .email{
+    display: grid;
+    font-size: 15px;
+
+}
+.card-form .medel-slot .email input{
+        background-color: #f4f4fd;
+        width: 220px;
+        padding: 7px;
+        border-radius: 7px;
+        border: 1px solid #cbcbcb;
+        color: 142, 140, 140;
+}
+.card-form .medel-slot .password .hedar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    width: 235px;
+    
+}
+.card-form .medel-slot .hedar .p{
+    color: #3d9b3d;
+    cursor: pointer;
+}
+.card-form .medel-slot .password input{
+     background-color: #f4f4fd;
+        width: 220px;
+        padding: 7px;
+        border-radius: 7px;
+        border: 1px solid #cbcbcb;
+        color: 142, 140, 140;
+}
+.card-form .medel-slot .checkbox {
+    color:rgb(142, 140, 140) ;
+    font-size: 15px;
+  
+    
+
+}
+.card-form .medel-slot .submit input{
+     background-color: #59a280;
+        width: 240px;
+        padding: 7px;
+        border-radius: 7px;
+        border: 1px solid #cbcbcb;
+        color: white;
+        cursor: pointer;
+
+}
+.card-form .lawer-slot h6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #cbcbcb; 
+}
+
+.card-form .lawer-slot h6::before {
+    content: '';
+    height: 1px;
+    background: grey;
+    width: 100px;
+}
+
+.card-form .lawer-slot h6::after {
+    content: '';
+    height: 1px;
+    background: grey;
+    width: 100px;
+}
+
+
+.card-form .lawer-slot .text{
+    display: flex;
+    font-size:15px ;
+      color:rgb(142, 140, 140) ;
+}
+
+  
+
+.card-form .lawer-slot .text .p-green{
+    color:#3d9b3d;
+}
